@@ -1,0 +1,505 @@
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Seq</th>
+      <th>Current Corporate Name / Other Corporate Name</th>
+      <th>Current Approved Name for Carrying on Business in H.K.</th>
+      <th>BR Number</th>
+      <th>Date of Registration</th>
+      <th>Date of Change of name</th>
+      <th>Address of Registered Office</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>23</td>
+      <td>ACTIVE SMART LIMITED</td>
+      <td></td>
+      <td>77902045</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77902045" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>164</td>
+      <td>Arrano International Holdings Limited</td>
+      <td></td>
+      <td>77917828</td>
+      <td>27-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77917828" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>164</td>
+      <td>安聯國際控股有限公司</td>
+      <td></td>
+      <td>77917828</td>
+      <td>27-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77917828" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>189</td>
+      <td>AstraNova Technologies Limited</td>
+      <td></td>
+      <td>77894898</td>
+      <td>24-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77894898" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>214</td>
+      <td>AUTUMN RICHES LIMITED</td>
+      <td></td>
+      <td>77909314</td>
+      <td>26-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77909314" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>413</td>
+      <td>CHAMPION TOP INVESTMENT DEVELOPMENT LIMITED</td>
+      <td></td>
+      <td>77902265</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77902265" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>413</td>
+      <td>寰冠投資發展有限公司</td>
+      <td></td>
+      <td>77902265</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77902265" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>467</td>
+      <td>China Guo Xin Service Holding Limited</td>
+      <td></td>
+      <td>77910397</td>
+      <td>26-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77910397" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>467</td>
+      <td>中國國信服務控股有限公司</td>
+      <td></td>
+      <td>77910397</td>
+      <td>26-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77910397" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>812</td>
+      <td>ERA WIN HOLDINGS LIMITED</td>
+      <td></td>
+      <td>77926875</td>
+      <td>28-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77926875" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>812</td>
+      <td>時凱控股有限公司</td>
+      <td></td>
+      <td>77926875</td>
+      <td>28-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77926875" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>832</td>
+      <td>EVER LUCKY VENTURES LIMITED</td>
+      <td></td>
+      <td>77909398</td>
+      <td>26-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77909398" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>832</td>
+      <td>永運創投有限公司</td>
+      <td></td>
+      <td>77909398</td>
+      <td>26-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77909398" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>833</td>
+      <td>EVER RAINBOW HOLDINGS LIMITED</td>
+      <td></td>
+      <td>77902914</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77902914" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>2114</td>
+      <td>JA MIYAZAKI</td>
+      <td></td>
+      <td>77894929</td>
+      <td>24-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77894929" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>2379</td>
+      <td>Lichen International Limited</td>
+      <td></td>
+      <td>67190711</td>
+      <td></td>
+      <td>25-03-2025</td>
+      <td><a href="https://hkannualreturn.com/67190711" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>2379</td>
+      <td>理臣國際有限公司</td>
+      <td></td>
+      <td>67190711</td>
+      <td></td>
+      <td>25-03-2025</td>
+      <td><a href="https://hkannualreturn.com/67190711" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>2659</td>
+      <td>NATURAL BEAUTY ENTERPRISE DEVELOPMENT LIMITED</td>
+      <td></td>
+      <td>77906895</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77906895" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>2659</td>
+      <td>港佳企業發展有限公司</td>
+      <td></td>
+      <td>77906895</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77906895" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>2761</td>
+      <td>Ocean Ally Ltd</td>
+      <td></td>
+      <td>77920578</td>
+      <td>27-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77920578" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>2818</td>
+      <td>PACIFIC MI LIMITED</td>
+      <td></td>
+      <td>77902003</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77902003" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>2855</td>
+      <td>PHOENIX VENTURE INVESTMENT LIMITED</td>
+      <td></td>
+      <td>77903033</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77903033" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>3382</td>
+      <td>SUNNY KING INVESTMENTS INC.</td>
+      <td></td>
+      <td>57843744</td>
+      <td>27-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/57843744" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>3532</td>
+      <td>TOPUP ROUGE ENTERPRISE LIMITED</td>
+      <td></td>
+      <td>77902736</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77902736" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>3532</td>
+      <td>紅昇企業有限公司</td>
+      <td></td>
+      <td>77902736</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77902736" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>3614</td>
+      <td>UNITED WIN ENTERPRISE DEVELOPMENT LIMITED</td>
+      <td></td>
+      <td>77903334</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77903334" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>3614</td>
+      <td>聯發企業發展有限公司</td>
+      <td></td>
+      <td>77903334</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77903334" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>4117</td>
+      <td>上海凱匯建築設計有限公司</td>
+      <td></td>
+      <td>77918206</td>
+      <td>27-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77918206" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>4117</td>
+      <td>Shanghai Kaihui Architectural Design Company Limited</td>
+      <td></td>
+      <td>77918206</td>
+      <td>27-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77918206" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>4118</td>
+      <td>上海劍橋科技股份有限公司</td>
+      <td></td>
+      <td>77917315</td>
+      <td>27-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77917315" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>4118</td>
+      <td>CIG SHANGHAI CO., LTD.</td>
+      <td></td>
+      <td>77917315</td>
+      <td>27-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77917315" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>4119</td>
+      <td>奇瑞汽車股份有限公司</td>
+      <td></td>
+      <td>77902778</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77902778" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>4119</td>
+      <td>CHERY AUTOMOBILE CO., LTD</td>
+      <td></td>
+      <td>77902778</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77902778" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>4120</td>
+      <td>威海銀行股份有限公司</td>
+      <td></td>
+      <td>71823926</td>
+      <td></td>
+      <td>26-03-2025</td>
+      <td><a href="https://hkannualreturn.com/71823926" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>4120</td>
+      <td>WEIHAI BANK CO., LTD.</td>
+      <td></td>
+      <td>71823926</td>
+      <td></td>
+      <td>26-03-2025</td>
+      <td><a href="https://hkannualreturn.com/71823926" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>4121</td>
+      <td>康美包（蘇州）有限公司</td>
+      <td></td>
+      <td>77925780</td>
+      <td>28-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77925780" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>4122</td>
+      <td>廈門海辰儲能科技股份有限公司</td>
+      <td></td>
+      <td>77925853</td>
+      <td>28-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77925853" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>4122</td>
+      <td>Xiamen Hithium Energy Storage Technology Co., Ltd.</td>
+      <td></td>
+      <td>77925853</td>
+      <td>28-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77925853" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>4123</td>
+      <td>智慧互通科技股份有限公司</td>
+      <td></td>
+      <td>77925706</td>
+      <td>28-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77925706" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>4123</td>
+      <td>Artificial Intelligent Interconnection Technology Co., Ltd.</td>
+      <td></td>
+      <td>77925706</td>
+      <td>28-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77925706" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>4124</td>
+      <td>深圳市順友跨境物流股份有限公司</td>
+      <td></td>
+      <td>77894911</td>
+      <td>24-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77894911" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>4125</td>
+      <td>湖南鳴鳴很忙商業連鎖有限公司</td>
+      <td></td>
+      <td>77909380</td>
+      <td>26-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77909380" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>4125</td>
+      <td>Busy Ming Group Co., Ltd.</td>
+      <td></td>
+      <td>77909380</td>
+      <td>26-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77909380" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>4126</td>
+      <td>藍思科技股份有限公司</td>
+      <td></td>
+      <td>77916767</td>
+      <td>27-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77916767" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>4126</td>
+      <td>Lens Technology Co., Ltd.</td>
+      <td></td>
+      <td>77916767</td>
+      <td>27-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77916767" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>4127</td>
+      <td>風睿能源股份有限公司</td>
+      <td></td>
+      <td>77903635</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77903635" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>4127</td>
+      <td>Synera Renewable Energy CO., LTD.</td>
+      <td></td>
+      <td>77903635</td>
+      <td>25-03-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77903635" rel="nofollow">Address</a></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,565 @@
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Seq</th>
+      <th>Current Corporate Name / Other Corporate Name</th>
+      <th>Current Approved Name for Carrying on Business in H.K.</th>
+      <th>BR Number</th>
+      <th>Date of Registration</th>
+      <th>Date of Change of name</th>
+      <th>Address of Registered Office</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>195</td>
+      <td>BIG FOCUS HOLDINGS LIMITED</td>
+      <td></td>
+      <td>77699721</td>
+      <td>14-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77699721" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>217</td>
+      <td>BLOC AMEA PTE. LTD.</td>
+      <td></td>
+      <td>77683104</td>
+      <td>11-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77683104" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>272</td>
+      <td>BUTONG GROUP</td>
+      <td></td>
+      <td>77696375</td>
+      <td>13-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77696375" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>272</td>
+      <td>不同集團</td>
+      <td></td>
+      <td>77696375</td>
+      <td>13-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77696375" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>284</td>
+      <td>Calderys Finland Oy</td>
+      <td></td>
+      <td>77683984</td>
+      <td>11-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77683984" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>308</td>
+      <td>Changchun Overseas Limited</td>
+      <td></td>
+      <td>77680261</td>
+      <td>10-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77680261" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>431</td>
+      <td>CORAL RESOURCES TRADING INC.</td>
+      <td></td>
+      <td>77678355</td>
+      <td>10-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77678355" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>441</td>
+      <td>CREATIVE HEADS LIMITED</td>
+      <td></td>
+      <td>77702813</td>
+      <td>14-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77702813" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>460</td>
+      <td>CUTTING EDGE VENTURES LIMITED</td>
+      <td></td>
+      <td>57914638</td>
+      <td>10-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/57914638" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>569</td>
+      <td>EASTERN DUTY FREE SUPPLIERS (JERSEY) LIMITED</td>
+      <td></td>
+      <td>77697486</td>
+      <td>13-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77697486" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>605</td>
+      <td>Empower International (BVI) Limited</td>
+      <td></td>
+      <td>77702708</td>
+      <td>14-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77702708" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>690</td>
+      <td>Fintech Wealth Limited</td>
+      <td></td>
+      <td>77688691</td>
+      <td>12-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77688691" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>713</td>
+      <td>FOCUS INTERNATIONAL GROUP LTD.</td>
+      <td></td>
+      <td>77687661</td>
+      <td>11-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77687661" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>713</td>
+      <td>焦點國際有限公司</td>
+      <td></td>
+      <td>77687661</td>
+      <td>11-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77687661" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>857</td>
+      <td>GOEDHUIS WADDESDON LIMITED</td>
+      <td></td>
+      <td>77678949</td>
+      <td>10-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77678949" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>886</td>
+      <td>GP Energy Tech Limited</td>
+      <td></td>
+      <td>77685512</td>
+      <td>11-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77685512" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>886</td>
+      <td>GP能源科技有限公司</td>
+      <td></td>
+      <td>77685512</td>
+      <td>11-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77685512" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>932</td>
+      <td>GUSBURY ENTERPRISES INC.</td>
+      <td></td>
+      <td>77693369</td>
+      <td>12-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77693369" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>1533</td>
+      <td>HOSANNA INC.</td>
+      <td></td>
+      <td>77678232</td>
+      <td>10-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77678232" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>1578</td>
+      <td>Hutchison Ports China Limited</td>
+      <td></td>
+      <td>77682679</td>
+      <td>11-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77682679" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>1597</td>
+      <td>IMMENSE OCEAN INVESTMENTS LIMITED</td>
+      <td></td>
+      <td>77703047</td>
+      <td>14-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77703047" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>1659</td>
+      <td>JF SmartInvest (BVI) Limited</td>
+      <td></td>
+      <td>77688900</td>
+      <td>12-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77688900" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>1659</td>
+      <td>九方智投(BVI)有限公司</td>
+      <td></td>
+      <td>77688900</td>
+      <td>12-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77688900" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>1770</td>
+      <td>KEYPRO PROPERTY HOLDINGS LIMITED</td>
+      <td></td>
+      <td>77693343</td>
+      <td>12-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77693343" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>1783</td>
+      <td>King One Energy Company Limited</td>
+      <td></td>
+      <td>77694145</td>
+      <td>13-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77694145" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>2006</td>
+      <td>Mercuria Custos Ltd.</td>
+      <td></td>
+      <td>74653982</td>
+      <td></td>
+      <td>14-02-2025</td>
+      <td><a href="https://hkannualreturn.com/74653982" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>2107</td>
+      <td>NEW RAY DEVELOPMENTS LIMITED</td>
+      <td></td>
+      <td>77696244</td>
+      <td>13-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77696244" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>2211</td>
+      <td>Pacific Eagle Investments 2 Limited</td>
+      <td></td>
+      <td>77702643</td>
+      <td>14-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77702643" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>2212</td>
+      <td>Pacific Eagle Investments 3 Limited</td>
+      <td></td>
+      <td>77700308</td>
+      <td>14-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77700308" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>2269</td>
+      <td>POWERICH DEVELOPMENT LIMITED</td>
+      <td></td>
+      <td>77683316</td>
+      <td>11-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77683316" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>2269</td>
+      <td>力有發展有限公司</td>
+      <td></td>
+      <td>77683316</td>
+      <td>11-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77683316" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>2287</td>
+      <td>Prosperity Group International Limited</td>
+      <td></td>
+      <td>61994294</td>
+      <td></td>
+      <td>10-02-2025</td>
+      <td><a href="https://hkannualreturn.com/61994294" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>2287</td>
+      <td>恆昌集團國際有限公司</td>
+      <td></td>
+      <td>61994294</td>
+      <td></td>
+      <td>10-02-2025</td>
+      <td><a href="https://hkannualreturn.com/61994294" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>2301</td>
+      <td>Qian Xun Technology Limited</td>
+      <td></td>
+      <td>70726523</td>
+      <td></td>
+      <td>14-02-2025</td>
+      <td><a href="https://hkannualreturn.com/70726523" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>2301</td>
+      <td>千循科技有限公司</td>
+      <td></td>
+      <td>70726523</td>
+      <td></td>
+      <td>14-02-2025</td>
+      <td><a href="https://hkannualreturn.com/70726523" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>2324</td>
+      <td>QUICK REACH INTERNATIONAL LIMITED</td>
+      <td></td>
+      <td>77685847</td>
+      <td>11-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77685847" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>2387</td>
+      <td>ROSY BLOSSOM LIMITED</td>
+      <td></td>
+      <td>77691286</td>
+      <td>12-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77691286" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>2425</td>
+      <td>SAINT BELLA Inc.</td>
+      <td></td>
+      <td>76780628</td>
+      <td></td>
+      <td>10-02-2025</td>
+      <td><a href="https://hkannualreturn.com/76780628" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>2425</td>
+      <td>聖貝拉有限公司</td>
+      <td></td>
+      <td>76780628</td>
+      <td></td>
+      <td>10-02-2025</td>
+      <td><a href="https://hkannualreturn.com/76780628" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>2914</td>
+      <td>WAKAYAMA INTERNATIONAL LIMITED</td>
+      <td></td>
+      <td>38128799</td>
+      <td>10-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/38128799" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>2914</td>
+      <td>和歌山國際有限公司</td>
+      <td></td>
+      <td>38128799</td>
+      <td>10-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/38128799" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>2953</td>
+      <td>WIN EVER MANAGEMENT LIMITED</td>
+      <td></td>
+      <td>77702910</td>
+      <td>14-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77702910" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>2953</td>
+      <td>勝恆管理有限公司</td>
+      <td></td>
+      <td>77702910</td>
+      <td>14-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77702910" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>3149</td>
+      <td>Yufengchang Holdings Limited</td>
+      <td></td>
+      <td>68706276</td>
+      <td></td>
+      <td>12-02-2025</td>
+      <td><a href="https://hkannualreturn.com/68706276" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>3149</td>
+      <td>裕豐昌控股有限公司</td>
+      <td></td>
+      <td>68706276</td>
+      <td></td>
+      <td>12-02-2025</td>
+      <td><a href="https://hkannualreturn.com/68706276" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>3218</td>
+      <td>希迪智駕科技股份有限公司</td>
+      <td></td>
+      <td>77192494</td>
+      <td></td>
+      <td>11-02-2025</td>
+      <td><a href="https://hkannualreturn.com/77192494" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>3218</td>
+      <td>CiDi Inc.</td>
+      <td></td>
+      <td>77192494</td>
+      <td></td>
+      <td>11-02-2025</td>
+      <td><a href="https://hkannualreturn.com/77192494" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>3219</td>
+      <td>思格新能源(上海)股份有限公司</td>
+      <td></td>
+      <td>77681194</td>
+      <td>10-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77681194" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>3219</td>
+      <td>SIGENERGY TECHNOLOGY CO., LTD.</td>
+      <td></td>
+      <td>77681194</td>
+      <td>10-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77681194" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>3220</td>
+      <td>成都華潤燃氣設計有限公司</td>
+      <td></td>
+      <td>77688560</td>
+      <td>12-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77688560" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>3221</td>
+      <td>河北海偉電子新材料科技股份有限公司</td>
+      <td></td>
+      <td>77684354</td>
+      <td>11-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77684354" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>3221</td>
+      <td>Hebei Haiwei Electronic New Material Technology Co., Ltd.</td>
+      <td></td>
+      <td>77684354</td>
+      <td>11-02-2025</td>
+      <td></td>
+      <td><a href="https://hkannualreturn.com/77684354" rel="nofollow">Address</a></td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>3222</td>
+      <td>聲通科技股份有限公司</td>
+      <td></td>
+      <td>75485469</td>
+      <td></td>
+      <td>12-02-2025</td>
+      <td><a href="https://hkannualreturn.com/75485469" rel="nofollow">Address</a></td>
+    </tr>
+  </tbody>
+</table>
